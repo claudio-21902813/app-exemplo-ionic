@@ -1,0 +1,29 @@
+
+<ion-app>  
+  <ion-content>
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">MAPA</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-content fullscreen>
+      <ion-item *ngFor="let x of techs">
+        <ion-label>
+          <ion-icon name={{x.icon}}></ion-icon>
+          <h3>{{x.title}}</h3>
+        </ion-label>
+        </ion-item>
+    </ion-content>
+  
+  
+
+    <div id="container">
+      <p>algo</p>
+    </div>
+  </ion-content>
+</ion-app>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
